@@ -6,6 +6,7 @@ const dbDailect = process.env.DB_DIALECT
 const dbUser = process.env.DB_USER
 const dbPassword = process.env.DB_PASSWORD
 const host = process.env.HOST
+const port = process.env.PORT
 // const sequelize = new Sequelize(
 
 //   {
@@ -17,6 +18,7 @@ const host = process.env.HOST
 const sequelize = new Sequelize(databaseName, dbUser, dbPassword, {
   host: host,
   dialect: dbDailect,
+  port: port
 });
 
 db.Sequelize = Sequelize;
