@@ -1,0 +1,68 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #container {
+    display: flex;
+    /* gap: 30px; */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #console {
+    background-color: orange;
+  }
+  
+  #skeletonConsole {
+    font-size: 24px;
+  }
+  
+  .start_stop {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .start_stop button {
+    width: 100px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+  }
+  
+  .startbtn {
+    background-color: rgb(60, 168, 60);
+    color: white;
+  }
+  
+  .startbtn:disabled {
+    background-color: rgb(158, 243, 158);
+  }
+  
+  .stopbtn {
+    background-color: rgb(126, 80, 212);
+    color: white;
+  }
+  
+  .stopbtn:disabled {
+    background-color: rgb(136, 115, 173);
+  }
+  
+  .control_row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .controlbtn {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 76, 95);
+    border: none;
+    color: white;
+  }
