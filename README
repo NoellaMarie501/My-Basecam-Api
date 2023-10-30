@@ -1,0 +1,56 @@
+# Welcome to My Basecamp 1
+Welcome to My Basecamp 1
+
+## Task
+You will have a to create a website which mimique features from the original tools My Basecamp. It means having a database, a backend and a frontend.
+This project is splitted in 3 parts.
+
+We want our users to create their accounts, to connect and create projects!
+
+As developer you need to think about the User Experience and it needs to be great.
+
+## Description
+
+- This is a project meant to facilitate project management amoungst a team
+
+- The Main functionalities are:
+  - A user can Register
+  - A user can to perform CRUD on a project
+  - A user can be added, deleted edited or viewed. Note only admin has permission to delete, view and edit all users unless it is the user editing his account himself
+  - User should have a role either a simple user or a user and an admin at the same time.
+  - A user who created the project is the project admin and can:
+      * Add or remove an attachment from the project
+      * Associate or remove another user from his project
+      * Creat, edit, delete a thread or conversation for his project
+      * write messages in the project conversation channel
+  - Only users associated with the project can wite messages in the thread
+  - Only the owner of a project can edit or delete a project except the      admin.
+  - when session is expired the user is redirected to the login page.
+
+# Project Structure for the API 
+
+- The project is structured as follows:
+  - API Folder : containing the backend of our project
+    - home folder : containing the database data for seeding
+    - apiCore folder : containing the files that process our received dta from equests
+      - controllers folder : containing the route controllers of our project
+      - Services folder :services that controls and validates received data before any communication is done with the database
+    - Database folder: contains files that communicate direcetly with our database
+      - Models folder : contains the models or tables of our database
+      - Repository folder : contains methods that save, update, delete and fetch data from our database
+      - export_classes file : to export our various repository classes and methods as a module
+    - Server folder : contains the various file for the running of our sever
+
+
+
+## Installation
+## Usage
+Once the two severs are up and running with the ports and host specified you can now register and use the application
+```
+
+
+### The Core Team
+CHEO MARIE NOEL KIENG
+
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
