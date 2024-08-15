@@ -11,10 +11,12 @@
     "mysql2": "^3.6.1",
     "nodemon": "^2.0.22",
     "sequelize": "^6.33.0",
-    "sqlite3": "^5.1.6"
+    "sqlite3": "^5.1.6",
+    "yarn": "^1.22.22"
   },
   "scripts": {
-    "vercel build": "node server/index.js",
-    "dev": "nodemon server/index.js" 
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "build": "node server/index.js"
   }
 }

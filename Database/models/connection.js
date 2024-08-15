@@ -1,11 +1,11 @@
 require('dotenv').config();
 const { Sequelize, DataTypes } = require("sequelize");
 const db = {};
-const databaseName = process.env.DATABASE;
-const dbDailect = process.env.DB_DIALECT
-const dbUser = process.env.DB_USER
-const dbPassword = process.env.DB_PASSWORD
-const host = process.env.HOST
+const databaseName = "if0_37115090_my_basecamp";
+const dbDailect = "mysql"
+const dbUser = "if0_37115090"
+const dbPassword = "SixjbaWd2RM9q"
+const host = "sql110.infinityfree.com"
 const port = process.env.PORT
 // const sequelize = new Sequelize(
 
@@ -17,8 +17,8 @@ const port = process.env.PORT
 
 const sequelize = new Sequelize(databaseName, dbUser, dbPassword, {
   host: host,
-  dialect: dbDailect,
-  port: port
+  dialect: dbDailect//,
+  //port: port
 });
 
 db.Sequelize = Sequelize;

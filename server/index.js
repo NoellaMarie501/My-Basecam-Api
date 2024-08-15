@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000; 
 const host = 'localhost';
 const UsersController = require("../apiCore/controllers/users.controller");
 const ProjectsController = require("../apiCore/controllers/project.controller");
@@ -17,6 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use(express.static("resources/uploads"));
 //app.use('/resources', serveIndex(path.join(__dirname, 'resources/')));
+
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use('/resources', express.static(path.join(__dirname, 'resources/')));
 app.use("/users", UsersController);
 app.use("/projects", ProjectsController);
@@ -25,7 +27,7 @@ app.use("/threads", ThreadsController)
 app.use("/messages", MessagesController);
 
 app.listen(PORT, host,() => {
- // console.log(`listening on port = ${PORT}`);
+  console.log(`listening on port = ${PORT}`);
 });
 
 module.exports = app;
