@@ -14,7 +14,7 @@
     "sqlite3": "^5.1.6"
   },
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js" 
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js" 
   }
 }
